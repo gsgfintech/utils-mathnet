@@ -1,0 +1,1 @@
+Refactor some Mathnet.Numeric methods to extension methods with selectors (similar to Enumerable<TSource> extensions methods)
