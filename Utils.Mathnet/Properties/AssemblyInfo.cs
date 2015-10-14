@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Utils.Mathnet")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Refactor some Mathnet.Numeric methods to extension methods with selectors (similar to Enumerable extensions methods)")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Guillaume Teirlinck")]
 [assembly: AssemblyProduct("Utils.Mathnet")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
