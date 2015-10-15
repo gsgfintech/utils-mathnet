@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Net.Teirlinck.Utils.Mathnet</RootNamespace>
-    <AssemblyName>Utils.Mathnet</AssemblyName>
+    <AssemblyName>Net.Teirlinck.Utils.Mathnet</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

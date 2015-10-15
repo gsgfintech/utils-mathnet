@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>Utils.Mathnet</id>
+    <id>Net.Teirlinck.Utils.Mathnet</id>
     <version>1.0.0.0</version>
-    <title>Utils.Mathnet</title>
+    <title>Mathnet Utils</title>
     <authors>Guillaume Teirlinck</authors>
     <description>Refactor some Mathnet.Numeric methods to extension methods with selectors (similar to Enumerable extensions methods)</description>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -17,6 +17,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\guillaume\Documents\Visual Studio 2015\Projects\tmp\utils-mathnet\Utils.Mathnet\bin\Debug\Utils.Mathnet.dll" target="lib\net46" />
+    <file src="C:\Users\guillaume\Documents\Visual Studio 2015\Projects\FXTrading\tmp\utils-mathnet\Utils.Mathnet\bin\Debug\Utils.Mathnet.dll" target="lib\net46" />
   </files>
 </package>

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Utils.Mathnet")]
+[assembly: AssemblyTitle("Mathnet Utils")]
 [assembly: AssemblyDescription("Refactor some Mathnet.Numeric methods to extension methods with selectors (similar to Enumerable extensions methods)")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Guillaume Teirlinck")]
