@@ -30,12 +30,32 @@ namespace Net.Teirlinck.Utils.Mathnet
             return true;
         }
 
+        public static bool IsMonotonicIncreasing(this double[] sequence)
+        {
+            return sequence.IsMonotonic() && sequence.Last() >= sequence.First();
+        }
+
+        public static bool IsMonotonicDecreasing(this double[] sequence)
+        {
+            return sequence.IsMonotonic() && sequence.Last() <= sequence.First();
+        }
+
         public static bool IsMonotonic(this int[] sequence)
         {
             if (sequence == null || sequence.Length == 0)
                 return false;
 
             return sequence.Select(i => (double)i).ToArray().IsMonotonic();
+        }
+
+        public static bool IsMonotonicIncreasing(this int[] sequence)
+        {
+            return sequence.IsMonotonic() && sequence.Last() >= sequence.First();
+        }
+
+        public static bool IsMonotonicDecreasing(this int[] sequence)
+        {
+            return sequence.IsMonotonic() && sequence.Last() <= sequence.First();
         }
 
         public static bool IsStrictlyMonotonic(this double[] sequence)
@@ -59,6 +79,16 @@ namespace Net.Teirlinck.Utils.Mathnet
             return true;
         }
 
+        public static bool IsStrictlyMonotonicIncreasing(this double[] sequence)
+        {
+            return sequence.IsStrictlyMonotonic() && sequence.Last() > sequence.First();
+        }
+
+        public static bool IsStrictlyMonotonicDecreasing(this double[] sequence)
+        {
+            return sequence.IsStrictlyMonotonic() && sequence.Last() < sequence.First();
+        }
+
         public static bool IsStrictlyMonotonic(this int[] sequence)
         {
             if (sequence == null || sequence.Length == 0)
@@ -67,5 +97,14 @@ namespace Net.Teirlinck.Utils.Mathnet
             return sequence.Select(i => (double)i).ToArray().IsStrictlyMonotonic();
         }
 
+        public static bool IsStrictlyMonotonicIncreasing(this int[] sequence)
+        {
+            return sequence.IsStrictlyMonotonic() && sequence.Last() > sequence.First();
+        }
+
+        public static bool IsStrictlyMonotonicDecreasing(this int[] sequence)
+        {
+            return sequence.IsStrictlyMonotonic() && sequence.Last() < sequence.First();
+        }
     }
 }
