@@ -10,6 +10,9 @@ namespace Net.Teirlinck.Utils.Mathnet
             if (sequence == null || sequence.Length < 2)
                 return false;
 
+            if (sequence.Where(s => double.IsNaN(s)).Count() > 0)
+                return false;
+
             int sign = 0;
             int counter = 0;
 
@@ -61,6 +64,9 @@ namespace Net.Teirlinck.Utils.Mathnet
         public static bool IsStrictlyMonotonic(this double[] sequence)
         {
             if (sequence == null || sequence.Length < 2)
+                return false;
+
+            if (sequence.Where(s => double.IsNaN(s)).Count() > 0)
                 return false;
 
             int sign = Math.Sign(sequence[1] - sequence[0]);

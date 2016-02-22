@@ -15,6 +15,7 @@ namespace Utils.Mathnet.Tests
             Assert.IsTrue((new double[] { -1.5, 0, 0.5, 3, 4, 4.2, 5 }).IsMonotonic());
             Assert.IsTrue((new double[] { 5, 4.2, 4, 3, 0.5, 0, -1.5 }).IsMonotonic());
             Assert.IsTrue((new double[] { 5, 4, 4, 3, 0.5, 0, -1.5 }).IsMonotonic());
+            Assert.IsFalse((new double[] { 5, 4, 4, 3, 0.5, 0, double.NaN }).IsMonotonic());
         }
 
         [TestMethod]
@@ -25,6 +26,7 @@ namespace Utils.Mathnet.Tests
             Assert.IsFalse((new int[] { -1, 0, 0, 3, 2, 4, 5 }).IsStrictlyMonotonic());
             Assert.IsTrue((new double[] { -1.5, 0, 0.5, 3, 4, 4.2, 5 }).IsStrictlyMonotonic());
             Assert.IsTrue((new double[] { 5, 4.2, 4, 3, 0.5, 0, -1.5 }).IsStrictlyMonotonic());
+            Assert.IsFalse((new double[] { 5, 4.2, 4, 3, 0.5, 0, double.NaN }).IsStrictlyMonotonic());
             Assert.IsFalse((new double[] { 5, 4, 4, 3, 0.5, 0, -1.5 }).IsStrictlyMonotonic());
         }
     }
